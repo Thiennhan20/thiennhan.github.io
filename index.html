@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Ngày 8/3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" type="image/png" href="download.jpg">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🌸 Chúc Mừng Ngày Quốc Tế Phụ Nữ 8/3 🌸</h1>
+        <p class="message">Gửi đến những người phụ nữ tuyệt vời nhất, chúc các chị, các mẹ và tất cả phụ nữ luôn tràn đầy sức khỏe, hạnh phúc và thành công trong cuộc sống! 💐💖</p>
+        <button class="btn" onclick="startCelebration()">✨ Nhận Lời Chúc ✨</button>
+    </div>
+
+    <!-- Popup hiển thị lời chúc -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>💖 Chúc Mừng Ngày 8/3 💖</h2>
+            <p>Chúc các chị, các mẹ và tất cả phụ nữ luôn xinh đẹp, tràn đầy năng lượng và hạnh phúc. Cảm ơn vì tất cả những điều tuyệt vời mà các bạn mang đến cho thế giới này! 💐💖</p>
+            <!-- <button onclick="closePopup()">Đóng</button> -->
+        </div>
+        <!-- Khu vực hiển thị các icon pháo hoa sau khi bấm nút -->
+        <div class="fireworks-celebration">
+            <div id="fireworks-celebration-container"></div>
+        </div>
+    </div>
+
+    <!-- Hình ảnh thay thế sau 5 giây -->
+    <div id="image-replacement" class="image-replacement">
+        <div class="image-overlay"></div>
+        <img src="mom1.webp" alt="Hình ảnh thay thế">
+        <button id="close-image-btn" class="close-image-btn">Đóng</button>
+    </div>
+
+    <!-- Khu vực hiển thị các icon tung hứng trước khi bấm nút -->
+    <div class="fireworks-random">
+        <div id="fireworks-random-container"></div>
+    </div>
+    <audio id="background-music" loop>
+        <source src="mom.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ thẻ audio.
+    </audio>
+
+    <!-- Pháo hoa động -->
+    <div class="fireworks">
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
